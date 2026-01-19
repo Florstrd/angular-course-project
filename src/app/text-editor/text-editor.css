@@ -1,0 +1,39 @@
+.editor {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-right: 10px;
+}
+  
+button:hover {
+  background-color: #cacaca;
+}
+
+
+textarea {
+    width: 90vw;
+    height: 50vh;
+    padding: 12px 14px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    resize: none;
+}
