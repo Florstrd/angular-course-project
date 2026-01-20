@@ -8,6 +8,9 @@ import { Calculator } from './calculator/calculator';
 import { TextEditor } from './text-editor/text-editor';
 import { Weather } from './weather/weather';
 import { provideRouter } from '@angular/router';
+import { ChangeFontSize } from './change-font-size';
+import { BoldText } from './bold-text';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,15 +18,18 @@ import { provideRouter } from '@angular/router';
     Home,
     Calculator,
     TextEditor,
-    Weather
+    ChangeFontSize,
+    BoldText
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Weather
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
+    provideRouter(routes),
+    provideHttpClient()
   ],
   bootstrap: [App]
 })

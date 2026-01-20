@@ -5,6 +5,12 @@
     flex-direction: column;
 }
 
+.buttons-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 button {
     padding: 10px 20px;
     font-size: 15px;
@@ -15,11 +21,14 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
-    margin-right: 10px;
 }
   
 button:hover {
   background-color: #cacaca;
+}
+
+button.active {
+    background-color: #818181;
 }
 
 
@@ -34,6 +43,6 @@ textarea {
     border: 1px solid #ddd;
     border-radius: 4px;
     resize: vertical;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, font-weight 0.2s ease, font-size 0.1s ease;
     resize: none;
 }

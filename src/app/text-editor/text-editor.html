@@ -1,9 +1,11 @@
 <section class="editor">
     <div class="buttons-div">
-        <button>Decrease font size</button>
-        <button>Increase font size</button>
+        <p>Font size: {{ fontSize }}</p>
+        <button (click)="fontSize = fontSize - 2">A-</button>
+        <button (click)="fontSize = fontSize + 2">A+</button>
+        <button [class.active]="isBold" (click)="isBold = !isBold">Bold</button>
     </div>
     <div class="text-editor-div">   
-        <textarea></textarea>
+        <textarea [appChangeFontSize]="fontSize" [appBoldText]="isBold"></textarea>
     </div>
 </section>  

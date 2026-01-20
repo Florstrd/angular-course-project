@@ -1,1 +1,13 @@
-<p>weather works!</p>
+<div *ngIf="!weather">Loading...</div>
+<div *ngIf="weather" class="weather-card">
+    <div class="weather-header">
+      <select [(ngModel)]="location" (ngModelChange)="onCityChange()" class="weather-select">
+        <option *ngFor="let city of cityKeys" [value]="city">{{ city }}</option>
+      </select>
+    </div>
+  
+    <h1 class="weather-title">Temperature in {{ location }}</h1>
+    <p class="weather-info">Temperature: {{ weather.current_weather.temperature }} {{ weather.current_weather_units.temperature }}</p>
+    <p class="weather-info">Wind Speed: {{ weather.current_weather.windspeed }} {{ weather.current_weather_units.windspeed }}</p>
+  </div>
+  

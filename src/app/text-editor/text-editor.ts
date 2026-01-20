@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './text-editor.css',
 })
 export class TextEditor {
-
+  fontSize: number = 14;
+  isBold: boolean = false;
 }
