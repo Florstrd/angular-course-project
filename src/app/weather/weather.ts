@@ -31,6 +31,7 @@ export class Weather {
     Kuopio: { lat: 62.892, lon: 27.677 },
     Lahti: { lat: 60.983, lon: 25.662 },
     Pori: { lat: 61.483, lon: 21.783 },
+    Vaasa: { lat: 63.100, lon: 21.617 },
     Rovaniemi: { lat: 66.503, lon: 25.728 }
   };
   

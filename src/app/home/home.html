@@ -1,1 +1,26 @@
-<p>home works!</p>
+<div class="home-card">
+    <h2 class="home-title">Calculator</h2>
+    <p class="home-info">The calculator works by adding a value to both input fields, and by pressing the desiered operation, the result
+        of the two values is shown. The value also gets put on the first values place, for easier continued
+        calculations. All but squaring use both values for the calculation.</p>
+    <p class="home-info">The calculator was built by two-way binding the values with ngModel and running the calculation as a function
+        when the button for the calculation is pressed. After that the view was made simple and clean with CSS.</p>
+
+    <h2 class="home-title">Text Editor</h2>
+    <p class="home-info">The text editor has options to increase and decrease font size, and to bold and unbold the text. This works on
+        the whole text, and the font size is dynamically shown to the user.</p>
+    <p class="home-info">The text editor was built using two attribute directives, one for the font size and another for the bolding. The
+        font size is added and subtracted in the text editor component, and then sent to the directive on the textarea
+        to adjust the font size to the value. The bolding works in a similar way but with boolean values. The boolean
+        value is toggled by the button in the component, and is then sent to the directive also connected to the
+        textarea, to bold the text if the boolean value is true.</p>
+
+    <h2 class="home-title">Weather API</h2>
+    <p class="home-info">The weather view has an option to change the city to any of the available finnish cities. The current temperature
+        and wind speed is then shown.</p>
+    <p class="home-info">The weather is fetched with the API Open-Meteo by adding a service to send the API request. The weather
+        components constructor creates a weather service that it subscribes to, for it to asyncronously get the weather
+        data. Each city has its coordinates saved in an object in the component, to dynamically change the city name
+        with the data for that city. This object is created as an interface for typescript to recognize the formating of
+        the data.</p>
+</div>

@@ -16,7 +16,6 @@ import { provideHttpClient } from '@angular/common/http';
   declarations: [
     App,
     Home,
-    Calculator,
     TextEditor,
     ChangeFontSize,
     BoldText
@@ -24,7 +23,8 @@ import { provideHttpClient } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    Weather
+    Weather,
+    Calculator
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
